@@ -161,6 +161,7 @@
 .ifeng-sec1{
     padding: .24rem .3rem;
     margin-left: -.32rem;
+    border-bottom: .01rem solid #e4e4e4;
 }
 .ifeng-sec1 .text1{
     color:#1A1A1A ;
