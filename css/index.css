@@ -46,6 +46,24 @@
     left: 0;
     bottom: 0;
 }
+.swiper-slide .tit{
+    display: block;
+    width: 100%;
+    height:.8rem;
+    background:rgba(247,247,247,1);
+    opacity:0.8;
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.swiper-slide .tit h2{
+    font-size: .36rem;
+    line-height: .8rem;
+    font-weight:400;
+    color:#3B96F4;
+    
+}
 .swiper-text span{
     font-size:.32rem;
     font-weight:400;
@@ -145,6 +163,7 @@
     margin-left: -.32rem;
 }
 .ifeng-sec1 .text1{
+    color:#1A1A1A ;
     padding: .24rem .3rem;
 }
 .pic1{
@@ -167,4 +186,21 @@
 .pic1 .pic img{
     width: 100%;height: 100%;
     
+}
+.text1 .time{
+    margin-left: -3.88rem;
+}
+.text1 .num{
+    margin-right:-.3rem;
+}
+/* 上图下文 */
+.ifeng-sec2 .pic{
+    vertical-align: middle;
+    width:6.9rem;
+    height: 3.88rem;
+    margin-left: .32rem;
+    padding: 0;
+}
+.ifeng-sec2 .pic img{
+    width: 100%;height: 100%;
 }

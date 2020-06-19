@@ -1,0 +1,38 @@
+
+/* 字体图标
+第一步: 导入字体图标的路径  - font-face （需改名称）
+*/
+@font-face{
+    font-family: 'SinaHomeFont';
+    src: url('../font/SinaHomeFont.eot'); 
+    src: url('../font/SinaHomeFont.eot?#iefix') format('embedded-opentype'),
+    url('../font/SinaHomeFont.woff') format('woff'),
+    url('../font/SinaHomeFont.ttf')  format('truetype'),
+    url('../font/SinaHomeFont.svg#SinaHomeFont') format('svg');
+}
+/* 第二步: 引入公用的样式*/
+.icon-font{
+    font-family: 'SinaHomeFont';
+    font-weight:normal;
+    font-style:normal;
+    /*解决字体图标锯齿和不清晰的情况*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+/* 第三步: 编码 */
+.icon-com::before{
+    content:"\E90D";
+}
+
+/* 调bug   -  出现口的形状 而不是小图标
+- 路径的问题: index.css  - css文件夹中  ../
+                        -  font文件夹
+- 路径没有问题 - 公用的样式没有调取尽来 - class
+
+
+路径三种:
+平级关系  - 直接写文件的名称
+上级关系  -  ../
+下级      -    / 
+
+*/
