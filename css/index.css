@@ -1,0 +1,170 @@
+/* logo */
+.ifeng-hd{
+    width: 100%;
+    height: 0.8rem;
+    /* 解决传递问题 */
+    overflow: hidden;
+}
+.ifeng-hd img{
+    display: block;
+    width: 1.95rem;
+    height: 0.37rem;
+    margin:.215rem auto;  /* 有传递问题 */  
+}
+/* 导航 */
+.ifeng-nav{
+    height: .8rem;
+    line-height: .8rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* 控制子元素的排列方式 水平方向 默认 */
+    display: flex;
+}
+.ifeng-nav a{
+    padding:0 .26rem;
+    text-align: center;
+    color: #727272;
+    font-size:.36rem;
+}
+.ifeng-nav .current{
+    color: #F44343;
+}
+/* 轮播图 */
+.swiper-slide{
+    position: relative;
+}
+.swiper-slide img{
+    width: 100%;
+}
+.swiper-text{
+    display:block;
+    width:100%;
+    height:.8rem;
+    background:linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,-0.03));
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.swiper-text span{
+    font-size:.32rem;
+    font-weight:400;
+    color:rgba(255,255,255,1);
+    position: absolute;
+    left: .3rem;
+    bottom: .24rem;
+}
+.swiper-pagination{
+    padding-right: .3rem;
+    box-sizing: border-box;
+    text-align: right;
+    color: #004175;
+    font-size: .2rem;
+}
+.swiper-pagination-current{
+    font-size: .36rem;
+    color: #F44343;
+}
+/* 左图右文 */
+.ifeng-sec{
+    border-bottom: .01rem solid #e4e4e4;
+    padding: .24rem .3rem;
+}
+.ifeng-sec a{
+    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* 控制子元素的排列方式 水平方向 默认 */
+    display: flex;
+}
+.ifeng-sec .pic{
+    width: 1.82rem;
+    height: 1.3rem;
+    margin: 0 .32rem 0 0;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* 控制子元素的排列方式 水平方向 默认 */
+    display: flex;
+}
+.ifeng-sec .pic img{
+    width: 100%;height: 100%;
+}
+.ifeng-sec .text{
+    color: #1A1A1A;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:  1;
+    /* 控制子元素-垂直对齐-两端对齐 */
+    display: -webkit-box;    /* 弹性盒模型 */
+    -webkit-box-orient:vertical;  /* 垂直对齐 */
+    -webkit-box-pack: justify;   /* 两端对齐 */
+}
+.text h2{
+    /* 让文字超出两行出现省略号 */
+    display: -webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    overflow: hidden;
+}
+.text p{
+    /* 控制子元素 水平排列  两端对齐 */
+    display: flex;
+    justify-content: space-between;
+}
+/* 字体图标
+   第一步  导入字体图标的路径（修改名称） */
+@font-face{
+    font-family: 'ifeng';
+    src: url('../font/ifeng.eot'); /* IE9 Compat Modes */
+    src: url('../font/ifeng.eot#ifeng') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/ifeng.woff') format('woff'), /* Modern Browsers */
+    url('../font/ifeng.ttf')  format('truetype'), /* Safari, Android, iOS */
+    url('../font/ifeng.svg#ifeng') format('svg'); /* Legacy iOS */
+}
+/* 第二部  引入公用的样式 */
+.icon-font{
+    font-family: 'ifeng';
+    font-weight:normal;
+    font-style:normal;
+    
+    /*解决字体图标锯齿和不清晰的情况*/
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+/* 第三步  编码 */
+.icon-com::before{
+    content: "\E90D"
+}
+/* 三图 */
+.ifeng-sec1{
+    padding: .24rem .3rem;
+    margin-left: -.32rem;
+}
+.ifeng-sec1 .text1{
+    padding: .24rem .3rem;
+}
+.pic1{
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    /* 控制子元素的排列方式 水平方向 默认 */
+    display: flex;
+}
+.pic1 .pic{
+    width: 1.82rem;
+    height: 1.3rem;
+    margin: 0 0 0 .32rem;
+    padding: 0;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex:  1;
+}
+.pic1 .pic img{
+    width: 100%;height: 100%;
+    
+}
